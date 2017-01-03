@@ -265,31 +265,4 @@ function delete(&$model)
 	exit;
 }
 
-// function cart(&$model)
-// {
-// 	$model['cart'] = get_cart();
-// 	return 'fragments/cart_view';
-// }
 
-// function add_to_cart()
-// {
-// 	if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id'])) {
-// 		$id = $_POST['id'];
-// 		$photo = get_photo($id);
-		
-// 		$cart = &get_cart();
-// 		$amount = isset($cart[$id]) ? $cart[$id]['amount'] + 1 : 1;
-		
-// 		$cart[$id] = ['name' => $photo['name'], 'amount' => $amount];
-		
-// 		return 'redirect:' . $_SERVER['HTTP_REFERER'];
-// 	}
-// }
-
-function clear_cart()
-{
-	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-		$_SESSION['cart'] = [];
-		return 'redirect:' . $_SERVER['HTTP_REFERER'];
-	}
-}
