@@ -1,0 +1,209 @@
+/*elkooo*/
+
+body {
+    margin: 0 auto;
+}
+
+td {
+    border: 2px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+#formula>* {
+    font-size: 18px;
+    min-width: 10px;
+}
+
+#formula>label>* {
+    font-size: 14px;
+}
+
+#formula>label {
+    font-size: 14px;
+}
+
+#formula>label>textarea {
+    width: 300px;
+    height: 100px;
+}
+
+#content {
+    height: 100%;
+    margin: 5%;
+}
+
+a {
+    font-family: 'Times New Roman';
+    text-decoration: none;
+}
+
+p {
+    font-family: Arial;
+    font-size: medium;
+}
+
+h1 {
+    font-family: Tahoma;
+    text-decoration: overline;
+}
+
+h1+p {
+    font-size: small;
+}
+
+img+p {
+    font-size: small;
+    text-align: center;
+}
+
+#nav,
+#footer {
+    background-color: #808080;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#nav li {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    border: 3px double;
+}
+
+li.interactive {
+    border: dotted;
+}
+
+li.callendrium {
+    border: solid 1px;
+}
+
+#formula {
+    display: block;
+    margin: 1%;
+    text-align: center;
+}
+
+#menu li:hover {
+    background-color: darkgray;
+}
+
+#header {
+    background-color: gray;
+    text-align: center;
+    animation-name: example;
+    animation-duration: 8s;
+}
+
+#SVG {
+    animation-name: exampletwo;
+    animation-duration: 5s;
+}
+
+@keyframes example {
+    0% {
+        background-color: black;
+    }
+    25% {
+        background-color: darkgrey;
+    }
+    50% {
+        background-color: slategrey;
+    }
+    100% {
+        background-color: gray;
+    }
+}
+
+@keyframes exampletwo {
+    0% {
+        width: 200px;
+    }
+    25% {
+        width: 100px;
+    }
+    50% {
+        width: 220px;
+    }
+    100% {
+        width: 100px;
+    }
+}
+
+#menu,
+#menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    margin: 5px auto;
+    border: 1px solid black;
+}
+
+#menu li {
+    position: relative;
+    border: 1px solid black;
+}
+
+#menu a {
+    padding: 10px 10px;
+    color: black;
+}
+
+#menu ul {
+    display: none;
+    background-color: gray;
+    padding: 5px;
+    margin: 5px;
+    border: 3px double;
+}
+
+#menu>li:nth-child(2)>ul>li:nth-child(1)>a {
+    font-size: large;
+}
+
+.picture {
+    width: 25%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.picture:hover {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.link {
+    font-style: oblique;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    #formula>* {
+        font-size: 12px;
+        min-width: 10px;
+    }
+    #formula>label>* {
+        font-size: 12px;
+    }
+    #formula>label {
+        font-size: 12px;
+    }
+    #formula>label>textarea {
+        width: 200px;
+        height: 100px;
+    }
+}
